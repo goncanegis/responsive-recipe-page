@@ -1,0 +1,140 @@
+:root {
+  --main-yellow: #fff574;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  border-bottom: 15px solid #fff574;
+}
+
+main {
+  max-width: 900px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  height: 300px;
+  width: 100%;
+  max-width: 900px;
+  object-fit: cover;
+}
+
+section.title {
+  background-color: #fff574;
+  padding: 1rem 2rem;
+}
+
+section.title h1 {
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitles {
+  display: flex;
+  justify-content: space-around;
+}
+
+.subtitles h3 {
+  font-family: "Antic Didone", serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+section.content {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.ingredients h2,
+.directions h2 {
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.ingredients p,
+.directions li {
+  font-family: "Antic Didone", serif;
+  font-size: 12px;
+  margin-bottom: 0.25rem;
+}
+
+.directions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+}
+
+.line {
+  height: 1px;
+  width: 90%;
+  background-color: #777777;
+  margin: 0 auto;
+}
+
+footer {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Cormorant Garamond", serif;
+}
+
+@media (min-width: 900px) {
+  section.title h1 {
+    font-size: 34px;
+  }
+  section.title > div > h3 {
+    font-size: 14px;
+  }
+  section.content h2 {
+    font-size: 24px;
+  }
+  section.content p,
+  section.content li {
+    font-size: 16px;
+  }
+  .line {
+    width: 900px;
+  }
+  footer {
+    max-width: 900px;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
